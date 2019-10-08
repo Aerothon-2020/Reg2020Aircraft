@@ -81,7 +81,7 @@ timeStart = time.time() # start clock (to time simulation)
 # Create the Aircraft from the ACTailAircraft class imported above from Aerothon
 Aircraft = ACTailAircraft()
 #Aircraft = ACTLenAircraft()
-Aircraft.name = 'BAP_AerocatsReg_2017'
+Aircraft.name = 'TurboTime'
 
 # Assign parts we imported above (generated outside of this script) to aircraft
 Aircraft.SetWing(Wing)
