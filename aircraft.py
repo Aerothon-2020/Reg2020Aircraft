@@ -65,7 +65,7 @@ from Aerothon.ACWingWeight import ACRibWing
 
 # (USER) import Aerothon components
 #sys.path.append(os.path.join(BAPDir,r'Aerodynamics\Wing'))
-from Aerodynamics.Wing.wing import Wing # wing model
+from Aerodynamics.Wing.BiWing import BoxWing # wing model
 
 #sys.path.append(os.path.join(BAPDir,'Propulsion'))
 from Propulsion.propulsion import Propulsion # propulsion model
@@ -81,16 +81,16 @@ timeStart = time.time() # start clock (to time simulation)
 # Create the Aircraft from the ACTailAircraft class imported above from Aerothon
 Aircraft = ACTailAircraft()
 #Aircraft = ACTLenAircraft()
-Aircraft.name = 'TurboTime'
+Aircraft.name = 'Turbo Time'
 
 # Assign parts we imported above (generated outside of this script) to aircraft
-Aircraft.SetWing(Wing)
+Aircraft.SetWing(BoxWing)
 Aircraft.SetFuselage(Fuselage)
 Aircraft.SetPropulsion(Propulsion)
 
 # Wing alignment
 Aircraft.WingFuseFrac = 0.44 # 0.0 @ bottom of fuselage; 1.0 @ top of fuselage
-Aircraft.Wing.i = 0*ARCDEG   # induced angle of attack, wing incidence
+#Aircraft.Wing.i = 0*ARCDEG   # induced angle of attack, wing incidence
 
 # Engine alignment (height)
 Aircraft.EngineAlign = 0.72
@@ -357,16 +357,16 @@ if __name__ == '__main__':
     print 
     print
     print 'WING            : ', AsUnit(Aircraft.Wing.Weight,'ozf')
-    print "   Main Spar Wt : ", AsUnit(Wing.WingWeight.MainSpar.Weight,'ozf')
-    print "   2nd  Spar Wt : ", AsUnit(Wing.WingWeight.SecondSpar.Weight,'ozf')
-    print "   L.E. Weight  : ", AsUnit(Wing.WingWeight.LeadingEdge.Weight+\
-                                    Wing.WingWeight.LeadingEdgeBent1.Weight+\
-                                    Wing.WingWeight.LeadingEdgeBent2.Weight,'ozf')
-    print "   T.E. Weight  : ", AsUnit(Wing.WingWeight.TrailingEdge1.Weight+\
-                                    Wing.WingWeight.TrailingEdge2.Weight,'ozf')
-    print "   Rib Weight   : ", AsUnit(Wing.WingWeight.RibWeight(),'ozf')
-    print "   Skin Weight  : ", AsUnit(Wing.WingWeight.SkinWeight(),'ozf')
-    print "   Servos Weight: ", AsUnit(2*Wing.Aileron.Servo.Weight,'ozf')
+    print "   Main Spar Wt : ", AsUnit(BoxWing.WingWeight.MainSpar.Weight,'ozf')
+    print "   2nd  Spar Wt : ", AsUnit(BoxWing.WingWeight.SecondSpar.Weight,'ozf')
+    print "   L.E. Weight  : ", AsUnit(BoxWing.WingWeight.LeadingEdge.Weight+\
+                                    BoxWing.WingWeight.LeadingEdgeBent1.Weight+\
+                                    BoxWing.WingWeight.LeadingEdgeBent2.Weight,'ozf')
+    print "   T.E. Weight  : ", AsUnit(BoxWing.WingWeight.TrailingEdge1.Weight+\
+                                    BoxWing.WingWeight.TrailingEdge2.Weight,'ozf')
+    print "   Rib Weight   : ", AsUnit(BoxWing.WingWeight.RibWeight(),'ozf')
+    print "   Skin Weight  : ", AsUnit(BoxWing.WingWeight.SkinWeight(),'ozf')
+    print "   Servos Weight: ", AsUnit(2*BoxWing.Aileron.Servo.Weight,'ozf')
     print
 ##
     ######### SPH: ADD THESE OUTPUTS ##########
