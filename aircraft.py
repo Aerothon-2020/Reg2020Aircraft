@@ -311,7 +311,7 @@ if __name__ == '__main__':
     print 'Wing       V_LO : ', AsUnit(Aircraft.Wing.GetV_LO(),'ft/s')
     #print 'V max climb     : ', AsUnit(Aircraft.self.V_max_climb(),'ft/s')
     #print 'V max           : ', AsUnit(Aircraft.Wing.Vmax(),'ft/s')
-    print 'Ground Roll     : ', AsUnit(Aircraft.Groundroll(),'ft') 
+    print 'Ground Roll     : ', AsUnit(Aircraft.Groundroll(),'ft')
     print 'Lift of AoA     : ', AsUnit(Aircraft.GetAlphaFus_LO(),'deg')
     print 'Zero CM AoA     : ', AsUnit(Aircraft.Alpha_Zero_CM,'deg')
     print
@@ -357,17 +357,10 @@ if __name__ == '__main__':
     print 
     print
     print 'WING            : ', AsUnit(Aircraft.Wing.Weight,'ozf')
-    print "   Main Spar Wt : ", AsUnit(BoxWing.WingWeight.MainSpar.Weight,'ozf')
-    print "   2nd  Spar Wt : ", AsUnit(BoxWing.WingWeight.SecondSpar.Weight,'ozf')
-    print "   L.E. Weight  : ", AsUnit(BoxWing.WingWeight.LeadingEdge.Weight+\
-                                    BoxWing.WingWeight.LeadingEdgeBent1.Weight+\
-                                    BoxWing.WingWeight.LeadingEdgeBent2.Weight,'ozf')
-    print "   T.E. Weight  : ", AsUnit(BoxWing.WingWeight.TrailingEdge1.Weight+\
-                                    BoxWing.WingWeight.TrailingEdge2.Weight,'ozf')
-    print "   Rib Weight   : ", AsUnit(BoxWing.WingWeight.RibWeight(),'ozf')
-    print "   Skin Weight  : ", AsUnit(BoxWing.WingWeight.SkinWeight(),'ozf')
-    print "   Servos Weight: ", AsUnit(2*BoxWing.Aileron.Servo.Weight,'ozf')
     print
+    print "LowerWing Weight : ", BoxWing.LowerWing.Weight
+    print "UpperWing Weight : ", BoxWing.UpperWing.Weight
+    print "EndPlate Weight  : ", BoxWing.EndPlate.Weight
 ##
     ######### SPH: ADD THESE OUTPUTS ##########
     #Cn beta, Cm alpha, Cl beta

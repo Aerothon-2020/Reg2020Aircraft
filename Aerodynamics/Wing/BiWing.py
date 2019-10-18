@@ -9,7 +9,7 @@ from Aerothon.ACWingWeight import ACSolidWing, ACRibWing
 # Create the wing
 #
 BoxWing = ACBiWing(1, 4, 5)
-BoxWing.Lift_LO       = 35 * LBF
+BoxWing.Lift_LO       = 60 * LBF
 BoxWing.Lift_Ratio    = 0.5
 BoxWing.V_max_climb   = 65 * FT/SEC
 BoxWing.V_Stall       = 32.3 * FT/SEC
@@ -68,8 +68,8 @@ BoxWing.EndPlate.CEdge   = 'TE'
 #
 # Set the airfoils
 #
-BoxWing.UpperWing.Airfoil = 'e423'
-BoxWing.LowerWing.Airfoil = 'e423'
+BoxWing.UpperWing.Airfoil = 'S1223_TC'
+BoxWing.LowerWing.Airfoil = 'S1223_TC'
 BoxWing.EndPlate.Airfoil =  'NACA0012'
 
 #
