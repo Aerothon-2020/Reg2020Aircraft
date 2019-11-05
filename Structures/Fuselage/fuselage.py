@@ -146,9 +146,10 @@ Fuselage.PayBay.StringerMat = AircraftPly.copy()
 Fuselage.PayBay.StringerMat.LinearForceDensity = 0.01*LBF/IN
 Fuselage.PayBay.Align = 1.0 # Top of section relative to previous section
 
-# tennis ball size and weight insertion
-Fuselage.PayBay.AddComponent    ("TennisBalls"      , 0.0*LBF, (57.75*IN,7.5*IN,2.5*IN)     , "Front"   , (0.5 , 0.5, 0.88) )
-Fuselage.PayBay.TennisBalls.WeightGroup = "Fuselage"
+# Soccer ball size and weight insertion
+Fuselage.PayBay.AddComponent    ("SoccerBalls"      , 0.0*LBF, (57.75*IN,7.5*IN,2.5*IN)     , "Front"   , (0.5 , 0.5, 0.88) )
+Fuselage.PayBay.AddComponent    ("StaticPayload"      , 0.0*LBF, (57.57*IN,7.5*IN,0*IN)     , "Front"   , (0.5 , 0.5, 0.88) )
+Fuselage.PayBay.SoccerBalls.WeightGroup = "Fuselage"
 
 
 # SECTION 3: Payload bay and tail section -------------------------------------#
