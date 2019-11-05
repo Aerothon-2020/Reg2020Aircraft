@@ -38,7 +38,7 @@ from Aerothon.ACPropulsion import ACPropulsion
 from Propellars.APC_20x8E import Prop
 #sys.path.append(os.path.join(BAPDir,r'Propulsion\Motors'))
 #from Motors.Hacker_A50_14L import Motor
-from Motors.Scorpion250KV import Motor
+from Motors.Hacker_A50_14L import Motor
 
 ## # Scorpion Powerplant
 ##sys.path.append(os.path.join(BAPDir,r'Propulsion\Propellers'))

@@ -96,11 +96,17 @@ Aircraft.WingFuseFrac = 0.44 # 0.0 @ bottom of fuselage; 1.0 @ top of fuselage
 Aircraft.EngineAlign = 0.72
 
 # Aircraft Properties
-EmptyWeight = 17*LBF # dechellis: estimated airframe weight
-TennisBalls = 60.0 # dechellis: number of tennis balls flying
-BallWeight = 0.131333*LBF # dechellis: weight of 1 tennis ball
-PayloadWeight = (0.50*LBF+BallWeight)*TennisBalls # dechellis: "passenger luggage"
-Fuselage.PayBay.TennisBalls.Weight = BallWeight*TennisBalls # Reassign tennis ball weight distribution based off desired loading
+EmptyWeight = 20*LBF # dechellis: estimated airframe weight
+SoccerBalls = 1.0
+BallWeight = 1.0*LBF
+StaticWeight = 10.0*LBF
+PayloadWeight = (SoccerBalls*BallWeight)+StaticWeight
+Fuselage.PayBay.SoccerBalls.Weight = BallWeight*SoccerBalls
+Fuselage.PayBay.StaticPayload.Weight = StaticWeight
+#TennisBalls = 60.0 # dechellis: number of tennis balls flying
+#BallWeight = 0.131333*LBF # dechellis: weight of 1 tennis ball
+#PayloadWeight = (0.50*LBF+BallWeight)*TennisBalls # dechellis: "passenger luggage"
+#Fuselage.PayBay.TennisBalls.Weight = BallWeight*TennisBalls # Reassign tennis ball weight distribution based off desired loading
 Aircraft.TotalWeight = PayloadWeight + EmptyWeight # needed for calculations
 Aircraft.TippingAngle = 10*ARCDEG # Black line on AC plot, set to Lift Off AoA
 Aircraft.RotationAngle = 15*ARCDEG # Red line on AC plot, recommend 15 deg
