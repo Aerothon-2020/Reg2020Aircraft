@@ -99,7 +99,7 @@ Aircraft.EngineAlign = 0.72
 EmptyWeight = 20*LBF # dechellis: estimated airframe weight
 SoccerBalls = 1.0
 BallWeight = 1.0*LBF
-StaticWeight = 30.0*LBF
+StaticWeight = 15.0*LBF
 PayloadWeight = (SoccerBalls*BallWeight)+StaticWeight
 Fuselage.PayBay.SoccerBalls.Weight = BallWeight*SoccerBalls
 Fuselage.PayBay.StaticPayload.Weight = StaticWeight
@@ -137,10 +137,10 @@ Aircraft.HTailPos = 0.0 # T-Tail = 1 (horiz tail at top of vert tail);
 HTail.FullWing = True # Full wing surface (i.e. top and bottom tail)
 HTail.Inverted = True # Invert the airfoil section
 
-HTail.b = 49.2 * IN # horizontal tail span #MJZ was 50 in sholsinger
+HTail.b = 40.0 * IN # horizontal tail span #MJZ was 50 in sholsinger
 #HTail.S = 590.4 * IN**2 # horizontal tail planform area was 600 in**2 sholsinger
-HTail.S =  650 * IN**2 # horizontal tail planform area was 600 in**2 sholsinger
-HTail.L = 56*IN   # horizontal tail "length", dist back from wing AC
+HTail.S =  575.0 * IN**2 # horizontal tail planform area was 600 in**2 sholsinger
+HTail.L = 50*IN   # horizontal tail "length", dist back from wing AC
 HTail.TR = 1.0 # horizontal tail taper ratio
 HTail.o_eff = 0.97 # horizontal tail oswald #MJZ
 
@@ -214,8 +214,8 @@ Aircraft.VTailPos = 0.0 # spanwise along the horiz tail semi-span
 VTail.Axis    = (0.0, 1.0) # (0,1) full wing (or vert above centerline); (0,-1) for vert below centerline
 
 VTail.L       = HTail.L # match the LE of the horiz and vert tails
-VTail.S       = 222.5 * IN**2 
-VTail.b       = 20 * IN
+VTail.S       = 160.0 * IN**2
+VTail.b       = 12.0 * IN
 VTail.TR      = 0.85417
 
 VTail.o_eff   = 0.96
