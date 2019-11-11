@@ -24,8 +24,8 @@ BoxWing.Alt_LO        = 920 * FT
 
 BoxWing.FullWing = True
 
-BoxWing.Gap        = 0.21
-BoxWing.Stagger    = -.075
+BoxWing.Gap        = 0.1
+BoxWing.Stagger    = 0
 
 BoxWing.b             = 76.5*IN
 #BoxWing.UpperWing.b   = 4.5*FT

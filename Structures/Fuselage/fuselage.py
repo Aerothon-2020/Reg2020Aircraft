@@ -72,9 +72,9 @@ Fuselage = ACFuselage() # create the fuselage class
 
 # Create the sections of the fuselage that we intend to populate
 # -> AddSection('NAME',sectionLength,alignment(-1=bot, 0=center, 1=top, None=@CG)
-Fuselage.AddSection('Nose',9.125*IN,1) 
-Fuselage.AddSection('PayBay',19.625*IN,1)
-Fuselage.AddSection('Pay2Tail',35.0*IN,0)
+Fuselage.AddSection('Nose',9.35 *IN,0)
+Fuselage.AddSection('PayBay',9.30*IN,0)
+Fuselage.AddSection('Pay2Tail',20.0*IN,0)
 Fuselage.AddSection('Tail',17.375*IN,0)
 BaseWeight = 24*OZF # Weight in OZF that is multiplied in the force densities
 
@@ -85,24 +85,24 @@ BaseWeight = 24*OZF # Weight in OZF that is multiplied in the force densities
 # in SolidWorks relative to payload CG (5.89,0,-0.12)
  
 # front bulkhead definition
-Fuselage.Nose.FrontBulk.Width = 2.0*IN
-Fuselage.Nose.FrontBulk.Height = 2.0*IN
+Fuselage.Nose.FrontBulk.Width = 4.6*IN
+Fuselage.Nose.FrontBulk.Height = 11.13*IN
 Fuselage.Nose.FrontBulk.Material = AircraftPly.copy()
-Fuselage.Nose.FrontBulk.Material.AreaForceDensity = (0.01*BaseWeight)/(2.0*IN*2.0*IN)
+Fuselage.Nose.FrontBulk.Material.AreaForceDensity = (0.01*BaseWeight)/(4.6*IN*11.13*IN)
 Fuselage.Nose.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition
-Fuselage.Nose.BackBulk.Width = 7.75*IN
-Fuselage.Nose.BackBulk.Height = 7.75*IN
+Fuselage.Nose.BackBulk.Width = 10.55*IN
+Fuselage.Nose.BackBulk.Height = 10.53*IN
 Fuselage.Nose.BackBulk.Material = AircraftPly.copy()
-Fuselage.Nose.BackBulk.Material.AreaForceDensity = (0.03*BaseWeight)/(7.75*IN*7.75*IN)
+Fuselage.Nose.BackBulk.Material.AreaForceDensity = (0.03*BaseWeight)/(10.55*IN*10.53*IN)
 Fuselage.Nose.BackBulk.WeightGroup = 'Fuselage'
 
 # miscellaneous
 Fuselage.Nose.SkinMat = Ultracote.copy()
 Fuselage.Nose.StringerMat = Basswood.copy()
 Fuselage.Nose.StringerMat.LinearForceDensity = 0.005*LBF/IN
-Fuselage.Nose.Align = 3.978 # Top of section relative to thrust line (z=0)
+Fuselage.Nose.Align = 0.0 # Top of section relative to thrust line (z=0)
 Fuselage.Nose.WeightGroup = 'Fuselage'
 
 # Add components to the fuselage
@@ -126,10 +126,10 @@ Fuselage.Nose.SpeedController.WeightGroup = 'Propulsion'
 # in SolidWorks relative to payload CG (0.55,0.00,-0.99)
 
 # front bulkhead definition(matches the nose cross-sectional dimension)
-Fuselage.PayBay.FrontBulk.Width = 7.75*IN
-Fuselage.PayBay.FrontBulk.Height = 7.75*IN
+Fuselage.PayBay.FrontBulk.Width = 8.65*IN
+Fuselage.PayBay.FrontBulk.Height = 10.53*IN
 Fuselage.PayBay.FrontBulk.Material = AircraftPly.copy()
-Fuselage.PayBay.FrontBulk.Material.AreaForceDensity = (0.05*BaseWeight)/(7.75*IN*7.75*IN)
+Fuselage.PayBay.FrontBulk.Material.AreaForceDensity = (0.05*BaseWeight)/(8.65*IN*10.53*IN)
 Fuselage.PayBay.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition (matches the cross-sectional dimension of the nose and payload bay together)
