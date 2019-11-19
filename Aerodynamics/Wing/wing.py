@@ -52,13 +52,13 @@ Wing = ACMainWing(1)
 Wing.Airfoil = 'S1223'
 
 # lift-off conditions
-Wing.Lift_LO = 60*LBF  # 151107: shiggins guess
+Wing.Lift_LO = 45*LBF  # 151107: shiggins guess
 #Wing.V_Stall = 38 * FT/SEC #SPH: where does this come from?
 Wing.Alt_LO = 197*FT # approximation for elevation in Ft. Worth, TX
 
 # wing geometry (to launch 54.5 pounds under 200 feet)
-Wing.b = 154*IN      # wing span
-Wing.S = 3744*IN**2  # wing surface area (was 3695.04)
+Wing.b = 68.66*IN      # wing span
+Wing.S = (29*68.66)*IN**2  # wing surface area (was 3695.04)
 # More realistic 12 ft wing
 #Wing.b = 144*IN      # wing span 
 #Wing.S = 20*FT**2  # wing surface area

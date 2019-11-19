@@ -35,10 +35,10 @@ from Aerothon.ACPropulsion import ACPropulsion
 
 # Hacker Powerplant
 #sys.path.append(os.path.join(BAPDir,r'Propulsion\Propellers'))
-from Propellars.APC_20x8E import Prop
+from Propellars.APC_22x12E import Prop
 #sys.path.append(os.path.join(BAPDir,r'Propulsion\Motors'))
 #from Motors.Hacker_A50_14L import Motor
-from Motors.Hacker_A50_14L import Motor
+from Motors.Scorpion250KV import Motor
 
 ## # Scorpion Powerplant
 ##sys.path.append(os.path.join(BAPDir,r'Propulsion\Propellers'))
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     N = npy.linspace(1000,20000,30)*RPM
     Propulsion.PlotMatched(V, N, Vprop, fig = 2 )
     Propulsion.PlotTPvsN(N, Vprop, fig=1)
-    Propulsion.PlotTestData(fig=3)
+    #Propulsion.PlotTestData(fig=3)
     
     Propulsion.Draw(fig=4)
     

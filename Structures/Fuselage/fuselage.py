@@ -72,10 +72,10 @@ Fuselage = ACFuselage() # create the fuselage class
 
 # Create the sections of the fuselage that we intend to populate
 # -> AddSection('NAME',sectionLength,alignment(-1=bot, 0=center, 1=top, None=@CG)
-Fuselage.AddSection('Nose',9.125*IN,1) 
-Fuselage.AddSection('PayBay',19.625*IN,1)
-Fuselage.AddSection('Pay2Tail',35.0*IN,0)
-Fuselage.AddSection('Tail',17.375*IN,0)
+Fuselage.AddSection('Nose',9.63*IN,1)
+Fuselage.AddSection('PayBay',9*IN,1)
+Fuselage.AddSection('Pay2Tail',25.48*IN,0)
+Fuselage.AddSection('Tail',26*IN,0)
 BaseWeight = 24*OZF # Weight in OZF that is multiplied in the force densities
 
 # SECTION 1: Nose section only -------------------------------------------------#
@@ -83,7 +83,6 @@ BaseWeight = 24*OZF # Weight in OZF that is multiplied in the force densities
 
 # SPH 12/1/2015: from 151130 CAD target weight @ 15.5oz CG @ 1.14125in
 # in SolidWorks relative to payload CG (5.89,0,-0.12)
- 
 # front bulkhead definition
 Fuselage.Nose.FrontBulk.Width = 2.0*IN
 Fuselage.Nose.FrontBulk.Height = 2.0*IN
@@ -92,17 +91,17 @@ Fuselage.Nose.FrontBulk.Material.AreaForceDensity = (0.01*BaseWeight)/(2.0*IN*2.
 Fuselage.Nose.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition
-Fuselage.Nose.BackBulk.Width = 7.75*IN
-Fuselage.Nose.BackBulk.Height = 7.75*IN
+Fuselage.Nose.BackBulk.Width = 10.55*IN
+Fuselage.Nose.BackBulk.Height = 11.5*IN
 Fuselage.Nose.BackBulk.Material = AircraftPly.copy()
-Fuselage.Nose.BackBulk.Material.AreaForceDensity = (0.03*BaseWeight)/(7.75*IN*7.75*IN)
+Fuselage.Nose.BackBulk.Material.AreaForceDensity = (0.03*BaseWeight)/(10.55*IN*11.5*IN)
 Fuselage.Nose.BackBulk.WeightGroup = 'Fuselage'
 
 # miscellaneous
 Fuselage.Nose.SkinMat = Ultracote.copy()
 Fuselage.Nose.StringerMat = Basswood.copy()
 Fuselage.Nose.StringerMat.LinearForceDensity = 0.005*LBF/IN
-Fuselage.Nose.Align = 3.978 # Top of section relative to thrust line (z=0)
+Fuselage.Nose.Align = 2.59 # Top of section relative to thrust line (z=0)
 Fuselage.Nose.WeightGroup = 'Fuselage'
 
 # Add components to the fuselage
@@ -110,33 +109,32 @@ Fuselage.Nose.WeightGroup = 'Fuselage'
 Fuselage.Nose.AddComponent("NoseWheelServo",0.05*LBF,(1.14*IN,1.18*IN,0.51*IN),"Front",(0.8,0.5,0.05))
 Fuselage.Nose.NoseWheelServo.WeightGroup = "Controls"
 
-Fuselage.Nose.AddComponent('MotorBattery',0.93125*LBF,(5.5*IN,1.75*IN,1.5*IN),'Back',(-0.4,0.7,0.685)) #
-Fuselage.Nose.AddComponent('SpeedController', 0.28*LBF,(0.75*IN,1.5*IN,2.0*IN),'Right',(0.4,0.3,0.7)) #SPH: placeholder for now
+Fuselage.Nose.AddComponent('MotorBattery',0.93125*LBF,(5.5*IN,1.75*IN,1.5*IN),'Back',(-0.4,0.5,0.685)) #
+Fuselage.Nose.AddComponent('SpeedController', 0.28*LBF,(0.75*IN,1.5*IN,2.0*IN),'Right',(0.4,0.5,0.7)) #SPH: placeholder for now
 
-Fuselage.Nose.AddComponent    ("Receiver"      , 0.030*LBF, (1.86*IN,0.56*IN,1.61*IN)     , "Bottom"   , (0.5 , 0.2, 0.5) )
+Fuselage.Nose.AddComponent    ("Receiver"      , 0.030*LBF, (1.86*IN,0.56*IN,1.61*IN)     , "Bottom"   , (0.5 , 0.5, 0.5) )
 Fuselage.Nose.Receiver.WeightGroup = "Controls"
 
 Fuselage.Nose.MotorBattery.WeightGroup = 'Propulsion'
 
 Fuselage.Nose.SpeedController.WeightGroup = 'Propulsion'
-
 # SECTION 2: Payload bay section ----------------------------------------------#
 
 # SPH 12/1/2015: target weight from 151130 CAD @ 8.8oz and CG @ 6.48125
 # in SolidWorks relative to payload CG (0.55,0.00,-0.99)
 
 # front bulkhead definition(matches the nose cross-sectional dimension)
-Fuselage.PayBay.FrontBulk.Width = 7.75*IN
-Fuselage.PayBay.FrontBulk.Height = 7.75*IN
+Fuselage.PayBay.FrontBulk.Width = 10.55*IN
+Fuselage.PayBay.FrontBulk.Height = 11.5*IN
 Fuselage.PayBay.FrontBulk.Material = AircraftPly.copy()
-Fuselage.PayBay.FrontBulk.Material.AreaForceDensity = (0.05*BaseWeight)/(7.75*IN*7.75*IN)
+Fuselage.PayBay.FrontBulk.Material.AreaForceDensity = (0.05*BaseWeight)/(10.55*IN*11.5*IN)
 Fuselage.PayBay.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition (matches the cross-sectional dimension of the nose and payload bay together)
-Fuselage.PayBay.BackBulk.Width = 7.5*IN
-Fuselage.PayBay.BackBulk.Height = 10*IN #Help
+Fuselage.PayBay.BackBulk.Width = 10.55*IN
+Fuselage.PayBay.BackBulk.Height = 11.5*IN #Help
 Fuselage.PayBay.BackBulk.Material = AircraftPly.copy()
-Fuselage.PayBay.BackBulk.Material.AreaForceDensity = (0.1*BaseWeight)/(7.5*IN*7.25*IN)
+Fuselage.PayBay.BackBulk.Material.AreaForceDensity = (0.1*BaseWeight)/(10.55*IN*11.5*IN)
 Fuselage.PayBay.BackBulk.WeightGroup = 'Fuselage'
 
 # miscellaneous
@@ -147,28 +145,26 @@ Fuselage.PayBay.StringerMat.LinearForceDensity = 0.01*LBF/IN
 Fuselage.PayBay.Align = 1.0 # Top of section relative to previous section
 
 # Soccer ball size and weight insertion
-Fuselage.PayBay.AddComponent    ("SoccerBalls"      , 0.0*LBF, (57.75*IN,7.5*IN,2.5*IN)     , "Front"   , (0.5 , 0.5, 0.88) )
-Fuselage.PayBay.AddComponent    ("StaticPayload"      , 0.0*LBF, (57.57*IN,7.5*IN,0*IN)     , "Front"   , (0.5 , 0.5, 0.88) )
+Fuselage.PayBay.AddComponent    ("SoccerBalls"      , 0.0*LBF, (8.65*IN,8.65*IN,8.65*IN)     , "Front"   , (0.5 , 0.5, 0.6) )
+Fuselage.PayBay.AddComponent    ("StaticPayload"      , 0.0*LBF, (8.65*IN,10*IN,2.5*IN)     , "Front"   , (0.5 , 0.5, 0.15) )
 Fuselage.PayBay.SoccerBalls.WeightGroup = "Fuselage"
 
 
 # SECTION 3: Payload bay and tail section -------------------------------------#
-
 # SPH 12/1/2015: target weight from 151130 CAD @ 1.12oz and CG @ 13.19125
 # in SolidWorks relative to payload CG (-6.16,0,-1.73)
-
 # front bulkhead definition(matches the nose cross-sectional dimension)
-Fuselage.Pay2Tail.FrontBulk.Width = 7.5*IN
-Fuselage.Pay2Tail.FrontBulk.Height = 7.5*IN
+Fuselage.Pay2Tail.FrontBulk.Width = 10.55*IN
+Fuselage.Pay2Tail.FrontBulk.Height =11.5*IN
 Fuselage.Pay2Tail.FrontBulk.Material = AircraftPly.copy()
-Fuselage.Pay2Tail.FrontBulk.Material.AreaForceDensity = (1.08*BaseWeight)/(7.75*IN*7.75*IN)
+Fuselage.Pay2Tail.FrontBulk.Material.AreaForceDensity = (1.08*BaseWeight)/(10.55*IN*11.5*IN)
 Fuselage.Pay2Tail.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition (matches the cross-sectional dimension of the nose and payload bay together)
-Fuselage.Pay2Tail.BackBulk.Width = 7.5*IN
-Fuselage.Pay2Tail.BackBulk.Height = 3*IN
+Fuselage.Pay2Tail.BackBulk.Width = 4.37*IN
+Fuselage.Pay2Tail.BackBulk.Height = 2.56*IN
 Fuselage.Pay2Tail.BackBulk.Material = AircraftPly.copy()
-Fuselage.Pay2Tail.BackBulk.Material.AreaForceDensity = (1.5*BaseWeight)/(7.5*IN*3.0*IN)
+Fuselage.Pay2Tail.BackBulk.Material.AreaForceDensity = (1.5*BaseWeight)/(4.37*IN*2.56*IN)
 Fuselage.Pay2Tail.BackBulk.WeightGroup = 'Fuselage'
 
 # miscellaneous
@@ -184,17 +180,17 @@ Fuselage.Pay2Tail.Align = 1.0 # Top of section relative to previous seciton
 # in SolidWorks relative to payload CG (-20.01,0,-3.44)
 
 # front bulkhead definition(matches the nose cross-sectional dimension)
-Fuselage.Tail.FrontBulk.Width = 7.5*IN
-Fuselage.Tail.FrontBulk.Height = 3.0*IN
+Fuselage.Tail.FrontBulk.Width = 4.37*IN
+Fuselage.Tail.FrontBulk.Height = 2.56*IN
 Fuselage.Tail.FrontBulk.Material = AircraftPly.copy()
-Fuselage.Tail.FrontBulk.Material.AreaForceDensity = (0.15*BaseWeight)/(7.5*IN*3.0*IN)
+Fuselage.Tail.FrontBulk.Material.AreaForceDensity = (0.15*BaseWeight)/(4.37*IN*2.56*IN)
 Fuselage.Tail.FrontBulk.WeightGroup = 'Fuselage'
 
 # rear bulkhead definition (matches the cross-sectional dimension of the nose and payload bay together)
-Fuselage.Tail.BackBulk.Width = 7.5*IN
-Fuselage.Tail.BackBulk.Height = 3.0*IN
+Fuselage.Tail.BackBulk.Width = 4.37*IN
+Fuselage.Tail.BackBulk.Height = 2.56*IN
 Fuselage.Tail.BackBulk.Material = AircraftPly.copy()
-Fuselage.Tail.BackBulk.Material.AreaForceDensity = (0.2*BaseWeight)/(7.5*IN*3.0*IN)
+Fuselage.Tail.BackBulk.Material.AreaForceDensity = (0.2*BaseWeight)/(4.37*IN*2.56*IN)
 Fuselage.Tail.BackBulk.WeightGroup = 'Fuselage'
 
 # miscellaneous
@@ -202,7 +198,7 @@ Fuselage.Tail.SkinMat = Ultracote.copy()
 Fuselage.Tail.WeightGroup = 'Fuselage'
 Fuselage.Tail.StringerMat = AircraftPly.copy()
 Fuselage.Tail.StringerMat.LinearForceDensity = 0.01*LBF/IN
-Fuselage.Tail.Align = 2.4 # Top of section relative to previous section
+Fuselage.Tail.Align = 0 # Top of section relative to previous section
 
 #------------------------------------------------------------------------------#
 
@@ -227,7 +223,6 @@ Fuselage.TailBulk.WeightGroup = 'Fuselage'
 #==============================================================================#
 if __name__ == '__main__':
     import pylab as pyl
-    
     noseCompWeight = 0.0*OZF # initialize the weight for the components
     noseCompCG = 0.0*OZF*Fuselage.Nose.CG().copy()
     for component in Fuselage.Nose.param.Components: # loop through nose comps
@@ -245,7 +240,6 @@ if __name__ == '__main__':
 ##    print 'Nose CG       w/bulk:', AsUnit(Fuselage.Nose.CG(),'in')
 ##    print 'shiggins weight @', AsUnit(actualNoseWeight,'ozf'), ' CG @ ', AsUnit(noseCG,'in')
 ##    print
-
     payCompWeight = 0.0*OZF # initialize the weight for the components
     payCompCG = 0.0*OZF*Fuselage.PayBay.CG().copy()
     for component in Fuselage.PayBay.param.Components: # loop through nose comps
@@ -263,7 +257,6 @@ if __name__ == '__main__':
 ##    print 'PayBay CG     w/bulk:', AsUnit(Fuselage.PayBay.CG(),'in')
 ##    print 'shiggins weight @', AsUnit(actualPayWeight,'ozf'), ' CG @ ', AsUnit(payCG,'in')
 ##    print
-
     tranCompWeight = 0.0*OZF # initialize the weight for the components
     tranCompCG = 0.0*OZF*Fuselage.Pay2Tail.CG().copy()
     for component in Fuselage.Pay2Tail.param.Components: # loop through nose comps
@@ -294,7 +287,7 @@ if __name__ == '__main__':
               (tailCompCG + \
               (Fuselage.Tail.FrontBulk.Weight*Fuselage.Tail.FrontBulk.CG())+\
               (Fuselage.Tail.BackBulk.Weight*Fuselage.Tail.BackBulk.CG()))
-    
+
 ##    print 'Tail Weight   w/bulk:', AsUnit(Fuselage.Tail.Weight,'ozf')
 ##    print 'Tail CG       w/bulk:', AsUnit(Fuselage.Tail.CG(),'in')
 ##    print 'shiggins weight @', AsUnit(actualTailWeight,'ozf'), ' CG @ ', AsUnit(tailCG,'in')
@@ -305,5 +298,5 @@ if __name__ == '__main__':
     print 'Fuselage MOI        :', AsUnit(Fuselage.MOI(),'slug*ft**2')
     print 'Fuselage Desired CG :', AsUnit(Fuselage.AircraftCG(),'in')
     print
-##    Fuselage.Draw()
+    Fuselage.Draw()
     pyl.show()
