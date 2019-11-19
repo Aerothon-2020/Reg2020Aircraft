@@ -137,10 +137,10 @@ Aircraft.HTailPos = 0.0 # T-Tail = 1 (horiz tail at top of vert tail);
 HTail.FullWing = True # Full wing surface (i.e. top and bottom tail)
 HTail.Inverted = True # Invert the airfoil section
 
-HTail.b = 45 * IN # horizontal tail span #MJZ was 50 in sholsinger
+HTail.b = 49.18 * IN # horizontal tail span #MJZ was 50 in sholsinger
 #HTail.S = 590.4 * IN**2 # horizontal tail planform area was 600 in**2 sholsinger
-HTail.S =  549* IN**2 # horizontal tail planform area was 600 in**2 sholsinger
-HTail.L = 52.69*IN   # horizontal tail "length", dist back from wing AC
+HTail.S =  600 * IN**2 # horizontal tail planform area was 600 in**2 sholsinger
+HTail.L = 48.21*IN   # horizontal tail "length", dist back from wing AC
 HTail.TR = 1.0 # horizontal tail taper ratio
 HTail.o_eff = 0.97 # horizontal tail oswald #MJZ
 
@@ -151,7 +151,7 @@ HTail.ClSlopeAt = (-10*ARCDEG, 10*ARCDEG) #SPH: what is this actually doing?
 HTail.CmSlopeAt = (-4*ARCDEG, 5*ARCDEG) #SPH: what is this actually doing?
 
 # Elevator properties
-HTail.Elevator.Fc = 0.50 # Elevator chord (% chord)
+HTail.Elevator.Fc = 0.62 # Elevator chord (% chord)
 HTail.Elevator.Fb = 1.0 # Elevator span (% span)
 HTail.Elevator.Ft = 0.0 # Start of the aileron (% span)
 HTail.Elevator.Weight = 2.8*OZF # ##MASS##: matches prototype build 01/14/2016 SPH
@@ -214,8 +214,8 @@ Aircraft.VTailPos = 0.0 # spanwise along the horiz tail semi-span
 VTail.Axis    = (0.0, 1.0) # (0,1) full wing (or vert above centerline); (0,-1) for vert below centerline
 
 VTail.L       = HTail.L # match the LE of the horiz and vert tails
-VTail.S       = 141.18 * IN**2
-VTail.b       = 18.8 * IN
+VTail.S       = 154.29 * IN**2
+VTail.b       = 12.65 * IN
 VTail.TR      = 1
 
 VTail.o_eff   = 0.96
