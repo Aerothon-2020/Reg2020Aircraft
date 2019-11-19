@@ -9,11 +9,11 @@ from Aerothon.ACWingWeight import ACSolidWing, ACRibWing
 # Create the wing
 #
 BoxWing = ACBiWing(1, 4, 5)
-BoxWing.Lift_LO       = 60 * LBF
+BoxWing.Lift_LO       = 70 * LBF
 BoxWing.Lift_Ratio    = 0.5
 BoxWing.V_max_climb   = 65 * FT/SEC
 BoxWing.V_Stall       = 32.3 * FT/SEC
-BoxWing.Alt_LO        = 920 * FT
+BoxWing.Alt_LO        = 197 * FT
 
 
 ###############################################################################
@@ -24,10 +24,10 @@ BoxWing.Alt_LO        = 920 * FT
 
 BoxWing.FullWing = True
 
-BoxWing.Gap        = 0.21
-BoxWing.Stagger    = -.075
+BoxWing.Gap        = 0.34
+BoxWing.Stagger    = 0
 
-BoxWing.b             = 76.5*IN
+BoxWing.b             = 66.86*IN
 #BoxWing.UpperWing.b   = 4.5*FT
 #BoxWing.LowerWing.b   = 4*FT
 
