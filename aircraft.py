@@ -108,8 +108,8 @@ Fuselage.PayBay.StaticPayload.Weight = StaticWeight
 #PayloadWeight = (0.50*LBF+BallWeight)*TennisBalls # dechellis: "passenger luggage"
 #Fuselage.PayBay.TennisBalls.Weight = BallWeight*TennisBalls # Reassign tennis ball weight distribution based off desired loading
 Aircraft.TotalWeight = PayloadWeight + EmptyWeight # needed for calculations
-Aircraft.TippingAngle = 10*ARCDEG # Black line on AC plot, set to Lift Off AoA
-Aircraft.RotationAngle = 15*ARCDEG # Red line on AC plot, recommend 15 deg
+Aircraft.TippingAngle = 14*ARCDEG # Black line on AC plot, set to Lift Off AoA
+Aircraft.RotationAngle = 20*ARCDEG # Red line on AC plot, recommend 15 deg
 Aircraft.Alpha_Groundroll = 0*ARCDEG # AOA during ground roll
 
 Aircraft.CMSlopeAt = (2 * ARCDEG, 10 * ARCDEG)    # shiggins: what does this do? 
