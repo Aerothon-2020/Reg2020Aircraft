@@ -103,5 +103,5 @@ if __name__ == '__main__':
     print 'Measured Thrust : ', AsUnit(max(npy.array(Prop.ThrustData)[:,1]),'lbf')
     N = 6410*RPM
     print
-    
-    pyl.show() 
+
+    pyl.show()
