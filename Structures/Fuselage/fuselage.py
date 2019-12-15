@@ -75,7 +75,7 @@ Fuselage = ACFuselage() # create the fuselage class
 Fuselage.AddSection('Nose',9.63*IN,1)
 Fuselage.AddSection('PayBay',9*IN,1)
 Fuselage.AddSection('Pay2Tail',25.48*IN,0)
-Fuselage.AddSection('Tail',26*IN,0)
+Fuselage.AddSection('Tail',22.53*IN,0)
 BaseWeight = 24*OZF # Weight in OZF that is multiplied in the force densities
 
 # SECTION 1: Nose section only -------------------------------------------------#
