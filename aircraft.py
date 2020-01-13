@@ -281,14 +281,14 @@ Aluminum = Aluminum.copy()
 Steel    = Steel.copy()
 
 MainGear = Aircraft.MainGear # set main gear class
-MainGear.GearHeight   = 8.698 * IN
+MainGear.GearHeight   = 8.375 * IN
 ##MainGear.StrutL       = 1 * IN # with theta = 0 set to distance axle sits below payload bay
 ##MainGear.StrutW       = 0.2 * IN
 ##MainGear.StrutH       = 0.1 * IN
-MainGear.WheelDiam    = 6.0 * IN    # Changed Wheel Diameter to account for AC Tipping Angle
-MainGear.WheelThickness = 0.25*IN
+MainGear.WheelDiam    = 5.0 * IN    # Changed Wheel Diameter to account for AC Tipping Angle
+MainGear.WheelThickness = 0.42*IN
 MainGear.Theta = 0.0*ARCDEG # for gear angle (strut)
-MainGear.X[1] = 7.0 * IN # distance from center in y (shiggins: I am overriding the default calc here)
+MainGear.X[1] = 5.9815 * IN # distance from center in y (shiggins: I am overriding the default calc here)
 MainGear.Strut.Weight = 5.68*OZF 
 MainGear.Strut.WeightGroup = "LandingGear"
 MainGear.Wheel.Weight = 3.0*OZF # shiggins: guess for now
@@ -297,7 +297,7 @@ MainGear.Wheel.WeightGroup = "LandingGear"
 NoseGear = Aircraft.NoseGear # set nose gear class
 NoseGear.StrutW    = 0.1 * IN
 NoseGear.StrutH    = 0.1 * IN
-NoseGear.WheelDiam = 2 * IN
+NoseGear.WheelDiam = 4 * IN
 
 NoseGear.Strut.Weight = 3.0*OZF # shiggins: guess for now
 NoseGear.Strut.WeightGroup = "LandingGear"
