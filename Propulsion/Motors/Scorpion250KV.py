@@ -18,8 +18,8 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from Aerothon.ACMotor import ACMotor
 import numpy as npy
 import cmath as math
-from scalar.units import MM, IN, OZF, RPM, HP, V, A, OHM, GRAM, gacc, mAh, W, LBF, inHg, K
-from scalar.units import AsUnit
+from Aerothon.scalar.units import MM, IN, OZF, RPM, HP, V, A, OHM, GRAM, gacc, mAh, W, LBF, inHg, K
+from Aerothon.scalar.units import AsUnit
 from Aerothon.AeroUtil import STDCorrection
 
 #sys.path.append(os.path.join(BAPDir,r'Propulsion\Batteries'))

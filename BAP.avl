@@ -22,14 +22,14 @@ INDEX
 SECTION
 63.4572395091 0.0 18.6203657219   12.2000813339  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012_inv.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012_inv.dat"
 CONTROL
 Elevator  1.0  0.38  0. 0. 0.  1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #-----------------------
 SECTION
 63.4572395091 24.59 18.6203657219   12.2000813339  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012_inv.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012_inv.dat"
 CONTROL
 Elevator  1.0  0.38  0. 0. 0.  1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #==============================================================
@@ -50,33 +50,33 @@ INDEX
 SECTION
 9.42634394036 0.0 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 #-----------------------
 SECTION
 9.42634394036 12.7034 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 CONTROL
 Aileron  1.0  0.75  0. 0. 0.  -1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #-----------------------
 SECTION
 9.42634394036 20.058 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 CONTROL
 Aileron  1.0  0.75  0. 0. 0.  -1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #-----------------------
 SECTION
 9.42634394036 26.744 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 CONTROL
 Aileron  1.0  0.75  0. 0. 0.  -1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #-----------------------
 SECTION
 9.42634394036 33.43 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 #==============================================================
 #
 SURFACE
@@ -95,17 +95,17 @@ INDEX
 SECTION
 9.42634394036 0.0 31.4202657219   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 #-----------------------
 SECTION
 9.42634394036 20.058 31.4202657219   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 #-----------------------
 SECTION
 9.42634394036 33.43 31.4202657219   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\S1223_TC\S1223_TC.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\S1223_TC\S1223_TC.dat"
 #==============================================================
 #
 SURFACE
@@ -124,17 +124,17 @@ INDEX
 SECTION
 9.42634394036 33.43 8.68786572188   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012.dat"
 #-----------------------
 SECTION
 22.4610806483 33.43 20.0540657219   13.0347367079  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012.dat"
 #-----------------------
 SECTION
 9.42634394036 33.43 31.4202657219   26.0694734158  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012.dat"
 #==============================================================
 #
 SURFACE
@@ -150,13 +150,13 @@ INDEX
 SECTION
 63.4580503564 0.0 19.9003657219   12.1968379447  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012.dat"
 CONTROL
 Rudder  1.0  0.5  0. 0. 0.  -1.0 | Name  gain  Xhinge  XYZhvec  SgnDup
 #-----------------------
 SECTION
 63.4580503564 0.0 32.5503657219   12.1968379447  0 0 0 | Xle Yle Zle   Chord   Ainc   [ Nspan Sspace ]
 AFIL
-"C:\Users\Acer\PycharmProjects\UC_AircraftDesign\Aerothon-2020\Airfoils\NACA0012\NACA0012.dat"
+"C:\Users\mwybo\PycharmProjects\UC_Aircraft_Design\Airfoils\NACA0012\NACA0012.dat"
 CONTROL
 Rudder  1.0  0.5  0. 0. 0.  -1.0 | Name  gain  Xhinge  XYZhvec  SgnDup

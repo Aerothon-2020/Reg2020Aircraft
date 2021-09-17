@@ -32,9 +32,9 @@ import pylab as pyl
 #sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import MM, IN, OZF, RPM, HP, V, A, OHM, GRAM, gacc, mAh, W, \
+from Aerothon.scalar.units import MM, IN, OZF, RPM, HP, V, A, OHM, GRAM, gacc, mAh, W, \
      LBF, inHg, K
-from scalar.units import AsUnit
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACMotor import ACMotor
 from Aerothon.AeroUtil import STDCorrection
 

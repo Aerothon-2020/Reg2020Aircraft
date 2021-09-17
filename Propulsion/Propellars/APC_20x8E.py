@@ -29,9 +29,9 @@ BAPDir = os.path.join(trunkDir,r'Aircraft_Models\Reg2018Aircraft_UCBearForce\BAP
 sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K,\
+from Aerothon.scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K,\
      degR, inHg, MM
-from scalar.units import AsUnit
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACPropeller import ACPropeller
 from Aerothon.AeroUtil import STDCorrection
 
@@ -50,7 +50,7 @@ Prop.Solidity   = 0.0126
 
 Prop.AlphaStall = 20*ARCDEG
 Prop.AlphaZeroCL = 0*ARCDEG
-Prop.CLSlope    = .078/ARCDEG  #- 2D airfoil lift slope
+Prop.CLSlope    = ..2/ARCDEG  #- 2D airfoil lift slope
 Prop.CDCurve    = 2.2          #- 2D curvature of the airfoil drag bucket
 Prop.CDp        = .02          #- Parasitic drag
 

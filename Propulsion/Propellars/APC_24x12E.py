@@ -3,8 +3,8 @@ from Aerothon.ACPropeller import ACPropeller
 from Aerothon.AeroUtil import STDCorrection
 import numpy as npy
 import pylab as pyl
-from scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K, degR, inHg, MM
-from scalar.units import AsUnit
+from Aerothon.scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K, degR, inHg, MM
+from Aerothon.scalar.units import AsUnit
 
 # Set Propeller properties
 Prop             = ACPropeller()

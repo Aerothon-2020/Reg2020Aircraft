@@ -22,8 +22,8 @@ trunkDir = r'C:\eclipse\workspace\AircraftDesign\trunk'
 
 # import Aerothon modules
 sys.path.append(trunkDir)
-from scalar.units import GRAM, gacc, A, V, mAh, IN, LBF
-from scalar.units import AsUnit
+from Aerothon.scalar.units import GRAM, gacc, A, V, mAh, IN, LBF
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACMotor import ACBattery
 
 #==============================================================================#

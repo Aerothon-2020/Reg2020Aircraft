@@ -25,7 +25,7 @@ BAPDir = os.path.join(trunkDir,r'Aircraft_Models\Reg2016Aircraft_bAIRcats\ATLAS'
 sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import GRAM, gacc, A, V, mAh, IN
+from Aerothon.scalar.units import GRAM, gacc, A, V, mAh, IN
 from Aerothon.ACMotor import ACSpeedController
 
 #==============================================================================#
