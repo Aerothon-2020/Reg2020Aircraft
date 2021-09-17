@@ -29,9 +29,9 @@ import pylab as pyl
 #sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K,\
+from Aerothon.scalar.units import IN, LBF, SEC, ARCDEG, FT, RPM, OZF, GRAM, gacc, W, K,\
      degR, inHg, MM
-from scalar.units import AsUnit
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACPropeller import ACPropeller
 from Aerothon.AeroUtil import STDCorrection
 

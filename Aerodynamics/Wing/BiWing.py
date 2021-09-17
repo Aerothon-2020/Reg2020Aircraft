@@ -1,6 +1,6 @@
 from __future__ import division # let 5/2 = 2.5 rather than 2
-from scalar.units import LBF, SEC, ARCDEG, FT, IN, SLUG
-from scalar.units import AsUnit
+from Aerothon.scalar.units import LBF, SEC, ARCDEG, FT, IN, SLUG
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACWing import ACBiWing
 from Aerothon.DefaultMaterialsLibrary import PinkFoam, Monokote, Basswood, Balsa, CarbonBar
 from Aerothon.ACWingWeight import ACSolidWing, ACRibWing

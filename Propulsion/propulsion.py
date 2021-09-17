@@ -29,8 +29,8 @@ BAPDir = os.path.join(trunkDir,r'Aircraft_Models\Reg2018Aircraft_UCBearForce\BAP
 sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import IN, LBF, PSFC, SEC, ARCDEG, FT, OZF, RPM, HP, inHg
-from scalar.units import AsUnit
+from Aerothon.scalar.units import IN, LBF, PSFC, SEC, ARCDEG, FT, OZF, RPM, HP, inHg
+from Aerothon.scalar.units import AsUnit
 from Aerothon.ACPropulsion import ACPropulsion
 
 # Hacker Powerplant

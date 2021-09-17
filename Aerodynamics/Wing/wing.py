@@ -26,7 +26,7 @@ from __future__ import division # let 5/2 = 2.5 rather than 2
 # import built-in modules
 import os
 import sys
-sys.path.append(r"C:\eclipse\AircraftDesign\trunk")
+#sys.path.append(r"C:\eclipse\AircraftDesign\trunk")
 from math import atan
 
 # (USER) set-up directories
@@ -37,8 +37,8 @@ from math import atan
 #sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import LBF, SEC, ARCDEG, FT, IN, SLUG, OZF, OZM
-from scalar.units import AsUnit
+from Aerothon.scalar.units import LBF, SEC, ARCDEG, FT, IN, SLUG, OZF, OZM
+from Aerothon.scalar.units import AsUnit
 from Aerothon.DefaultMaterialsLibrary import PinkFoam, Monokote, Basswood,\
      Balsa, Ultracote, Poplar, AluminumBalsa
 from Aerothon.ACWing import ACMainWing

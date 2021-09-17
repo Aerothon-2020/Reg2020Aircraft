@@ -54,9 +54,9 @@ import cmath as math
 ##sys.path.append(trunkDir)
 
 # import Aerothon modules
-from scalar.units import M, FT, IN, ARCDEG, RAD, LBF, SEC, KG, SLUG, OZF, gacc,\
+from Aerothon.scalar.units import M, FT, IN, ARCDEG, RAD, LBF, SEC, KG, SLUG, OZF, gacc,\
      GRAM, OZM
-from scalar.units import AsUnit
+from Aerothon.scalar.units import AsUnit
 from Aerothon.DefaultMaterialsLibrary import Monokote, Basswood,\
      Steel, Balsa, Aluminum, Ultracote
 from Aerothon.ACAircraft import ACTailAircraft
